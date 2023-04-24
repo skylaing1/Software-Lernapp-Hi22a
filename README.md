@@ -1,2 +1,2 @@
 # Software-Lernapp-Hi22a
-Gruppenproject der Klasse Hi22a
+Gruppenprojekt der Klasse Hi22a
