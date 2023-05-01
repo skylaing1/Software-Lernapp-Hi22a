@@ -4,14 +4,12 @@
 using namespace std;
 
 int main() {
-    string antwort[3];  // string array für die fragen
-    bool aw[3];
 
-    string a = "$?Wie initialisiert man ein int-Array richtig?$3";
-    string b[6];
+    string a = "$?Wie initialisiert man ein int-Array richtig?$3"; 
+    string b[6];                 // Krücken, um das Programm zum laden der Zeilen temporär zu ersetzten
     b[1] = "$1+Mit int arr[3];$";
     b[2] = "$2-Mit int arr[3];$";
-    b[3] = "$3+Mit int arr[3];$!";
+    b[3] = "$3+Mit int arr[3];$!"; //
     int zeile = 0;
     string frage;
     int antworten = 0;
@@ -28,7 +26,8 @@ int main() {
                 }
 
             }
-                     // bool array, welche fragen richtig sind, 
+            string antwort[antworten];  // string array für die fragen
+            bool aw[antworten];         // bool array, welche fragen richtig sind, 
             for (int x = 0; x < antworten; x++) {
                 zeile++;                                    //Ersatz, um neue Zeilen zu laden
                 switch (zeile){                              
