@@ -11,11 +11,11 @@ int main()
 	srand(time(NULL));
 
 	
-	string fragea[6] = { "Frage: 1.2.01", "Die Teilnahme am Strassenverkehr erfordert staendige Vorsicht und gegenseitige Ruecksicht.Was bedeutet das fuer Sie ? ", "A- vorausschauend fahren", "B- in jedem Fall auf Ihrem Vorfahrtrecht bestehen", "C- mit Fehlverhalten anderer rechnen", "A,C"};
+	string fragea[6] = { "Frage: 1.2.01", "Die Teilnahme am Stra\341enverkehr erfordert st\204ndige Vorsicht und gegenseitige R\201cksicht.Was bedeutet das f\201r Sie ? ", "A- Vorausschauend fahren", "B- In jedem Fall auf Ihrem Vorfahrtrecht bestehen", "C- Mit Fehlverhalten anderer rechnen", "A,C"};
 
-	string frageb[6] = { "Frage: 1.2.19-003", "Sie naehern sich einem Bahnuebergang mit Blinklichtanlage und Halbschranke. Das rote Blinklicht leuchtet auf; die Halbschranke ist noch geoeffnet. Wie verhalten Sie sich?", "A- Vor dem Andreaskreuz warten", "B- Weiterfahren, solange die Halbschranke noch geoeffnet ist", "C- Den Bahnuebergang ueberqueren, wenn kein Schienenfahrzeug in Sicht ist", "A"};
+	string frageb[6] = { "Frage: 1.2.19-003", "Sie n\204hern sich einem Bahn\201bergang mit Blinklichtanlage und Halbschranke. Das rote Blinklicht leuchtet auf; die Halbschranke ist noch ge\224ffnet. Wie verhalten Sie sich?", "A- Vor dem Andreaskreuz warten", "B- Weiterfahren, solange die Halbschranke noch geoeffnet ist", "C- Den Bahnuebergang ueberqueren, wenn kein Schienenfahrzeug in Sicht ist", "A"};
 
-	string fragec[6] = { "Frage: 1.2.12 - 103", "Wo ist das Halten verboten?", "A- An Taxenständen", "B- Auf der Fahrbahn, wenn rechts ein geeigneter Seitenstreifen vorhanden ist", "C- Auf markierten Fahrstreifen mit Richtungspfeilen", "A,B,C"};
+	string fragec[6] = { "Frage: 1.2.12 - 103", "Wo ist das Halten verboten?", "A- An Taxenst\204nden", "B- Auf der Fahrbahn, wenn rechts ein geeigneter Seitenstreifen vorhanden ist", "C- Auf markierten Fahrstreifen mit Richtungspfeilen", "A,B,C"};
 
 
 	struct frage {
@@ -57,7 +57,7 @@ int main()
 	int punkte = 0;
 	string wiederholen;
 
-	cout << "Fuehrerschein Test" << endl << endl << "geben sie die Antworten in dem Format A,B,C an" << endl << endl << "Um Fortzufahren schreiben sie Start und Druecken sie Enter" << endl << endl;
+	cout << "F\201hrerschein-Test" << endl << endl << "Geben Sie die Antworten in dem Format A,B,C an" << endl << endl << "Um fortzufahren, schreiben Sie 'Start' und dr\201cken Sie die Enter-Taste" << endl << endl;
 	cin >> start;
 
 	do {
@@ -75,11 +75,11 @@ int main()
 
 				if (antwort == frage1.antwort)
 				{
-					cout << endl << endl << "Ihre Antwort ist Korrekt" << endl << endl << endl;
+					cout << endl << endl << "Ihre Antwort ist korrekt!" << endl << endl << endl;
 					punkte += 1;
 				}
 				else {
-					cout << endl << endl << "Ihre Antwort ist Falsch" << endl << endl << endl;
+					cout << endl << endl << "Ihre Antwort ist falsch!" << endl << endl << endl;
 				}
 
 				Fertig += 1;
@@ -92,11 +92,11 @@ int main()
 
 				if (antwort == frage2.antwort)
 				{
-					cout << endl << endl << "Ihre Antwort ist Korrekt" << endl << endl << endl;
+					cout << endl << endl << "Ihre Antwort ist korrekt!" << endl << endl << endl;
 					punkte += 1;
 				}
 				else {
-					cout << endl << endl << "Ihre Antwort ist Falsch" << endl << endl << endl;
+					cout << endl << endl << "Ihre Antwort ist falsch!" << endl << endl << endl;
 				}
 
 				Fertig += 1;
@@ -109,11 +109,11 @@ int main()
 
 				if (antwort == frage3.antwort)
 				{
-					cout << endl << endl << "Ihre Antwort ist Korrekt" << endl << endl << endl;
+					cout << endl << endl << "Ihre Antwort ist korrekt!" << endl << endl << endl;
 					punkte += 1;
 				}
 				else {
-					cout << endl << endl << "Ihre Antwort ist Falsch" << endl << endl << endl;
+					cout << endl << endl << "Ihre Antwort ist falsch!" << endl << endl << endl;
 				}
 
 				Fertig += 1;
@@ -121,11 +121,11 @@ int main()
 			}
 			if (Fertig == 3) {
 				cout << endl << endl << endl << endl << "Sie haben " << punkte << " von 3 Fragen richtig beantwortet" << endl << endl << endl << endl << endl;
-				cout << "Test Wiederholen?(ja/nein) ";
+				cout << "Test Wiederholen? (Ja/Nein) ";
 				cin >> wiederholen;
 			
 			}
 		}
 		
-	} while (wiederholen == "ja");
+	} while (wiederholen == "Ja"||"JA"||"ja"||"jA");
 	
